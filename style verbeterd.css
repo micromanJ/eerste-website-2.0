@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@media (max-width: 600px) {
+  .flex-item {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Algemene stijlen voor de hele pagina */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+/* Stijlen voor kopteksten */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 36px;
+}
+
+/* Stijlen voor paragrafen */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Stijlen voor afbeeldingen */
+img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+}
+
+/* Stijlen voor links */
+a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Flexbox
+/* Flex-container voor secties */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px 0;
+}
+
+/* Stijl voor individuele secties */
+.flex-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Je kunt dit aanpassen voor grotere of kleinere elementen */
+  text-align: center;
+}
+
+/* Flexbox voor afbeeldingen */
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Algemene stijlen voor de menubalk */
+nav {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown stijlen */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Toon dropdown bij hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dark-mode {
+  background-color: black;
+  color: black;
+}
+
+.dark-mode-container {
+  background-color: black;
+  color: brown;
+  border: 1px solid blue;
+}
